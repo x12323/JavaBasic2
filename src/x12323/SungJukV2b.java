@@ -20,15 +20,16 @@ import java.util.Scanner;
         public class SungJukV2b {
             public static void main(String[] args){
                 //변수선언
-                System.out.println(" : ");
+                System.out.println("이름 , 국어, 수학, 영어 점수를 입력하세요 : \n");
                 String name;
                 int kor, eng, mat, sum;
                 double mean;
                 char grd;
-                String fmt =  "이름 : %s\n" + "국어 : %d\n" + "영어 : %d\n" + "수학 : %d\n" + "총점 : %d\n" + "평균 : %.2f\n" + "학점 : %c\n";
+                String fmt =  "이름 : %s\n" + "국어 : %d\n"
+                            + "영어 : %d\n" + "수학 : %d\n"
+                            + "총점 : %d\n" + "평균 : %s\n" + "학점 : %c\n";
 
                 String result;
-
 
                 Scanner sc = new Scanner(System.in);
 
@@ -64,7 +65,12 @@ import java.util.Scanner;
                 // 9876543 / 100 => 98765.43
                 mean = Math.round(mean*100) / 100.0;
 
-                result = String.format(fmt, name, kor, eng, mat, sum, mean, grd);
+                // String.valueOf(값)
+                // 숫자를 문자로 변환
+                result = String.format(
+                        fmt, name, kor, eng,
+                        mat, sum, String.valueOf(mean), grd);
+
                 //결과출력
                 /*System.out.println("이름 : " + name);
                 System.out.println("국어 : " + kor);
