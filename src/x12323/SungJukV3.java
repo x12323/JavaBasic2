@@ -17,7 +17,8 @@ import java.util.Scanner;
 
     public class SungJukV3 {
         public static void main(String[] args){
-            //변수선언
+            //배열변수선언
+            //자료형 변수형[] = new 자료형[]
            String[] name = new String[3];
            int[] kor = new int[3];
            int[] eng = new int[3];
@@ -37,15 +38,25 @@ import java.util.Scanner;
             for(int i=0; i<3; i++) {
                 System.out.printf("%d번째 학생 성적 입력중...\n",i+1);
                 System.out.print("이름을 입력하세요 : ");
-                name[i] = sc.next();
+                name[i] = sc.nextLine();
                 System.out.print("국어를 입력하세요 : ");
-                kor[i] = sc.nextInt();
+                kor[i] = Integer.parseInt(sc.nextLine());
                 System.out.print("영어를 입력하세요 : ");
-                eng[i] = sc.nextInt();
+                eng[i] = Integer.parseInt(sc.nextLine());
                 System.out.print("수학을 입력하세요 : ");
-                mat[i] = sc.nextInt();
-                sum[i] = kor[i] + eng[i] + mat[i];
-                mean[i] = (double)sum[i] / 3;
+                mat[i] = Integer.parseInt(sc.nextLine()); //nextLine으로 하고싶을때
+
+                //sc.skip("\r\n|[\n\r]"); // 스킵
+
+                //수학 성적 입력시 같이 입력된 enter 키가
+                //다음 데이터(이름) 입력 시 입력값으로
+                //자동으로 전달됨
+                //그러한 상황을 해결하기 위해
+                //미리 엔터키를 제 거하는 코드 삽입
+
+                /*sum[i] = kor[i] + eng[i] + mat[i];
+                mean[i] = (double)sum[i] / 3;*/
+
                 switch( (int)mean[i] / 10 ) {
                     case 9 :
                         grd[i] = '수';
