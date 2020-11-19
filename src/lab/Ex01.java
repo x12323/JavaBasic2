@@ -14,6 +14,8 @@ public class Ex01 {
         //  학생 클래스를 이용해서 객체 생성
         Professor pro = new Professor();
 
+        //기본생성자로 만든
+
         // 각 개체의 변수에 값 대입
         // 학생
 
@@ -38,6 +40,11 @@ public class Ex01 {
         pro.name = "이순신";
         pro.major = "프로그래밍";
 
+
+        //매개변수를 사용하는 생성자로 객체 생성
+        Student lee = new Student(201350050, "전지현", "경기도 고양시",
+                                    "1985.3.22", "컴퓨터", "504");
+
         //객체에 저장된 값 출력
         //학생
         System.out.println(std.studentID);
@@ -46,6 +53,5 @@ public class Ex01 {
         System.out.println(std.birth);
         System.out.println(std.dept);
         System.out.println(std.prof);
-
     }
 }
