@@ -19,8 +19,6 @@ package x12323;
 //  클래스에 정의된 필드와 기능이 실제 메모리상에 할당된 것
 public class OOP {
 
-    //
-
     public static void main(String[] args) {
         //  Person 클래스를 이용해서 객체 생성 : 개체화
         //  클래스명 객체명 = new 생성자;

@@ -75,9 +75,7 @@ import java.util.Scanner;
                 }
             }
             //출력
-            for(int i=0; i<3; i++){
-                result = String.format(fmt, name[i], kor[i], eng[i], mat[i]);
-                System.out.println(result);
+
            }
 
 
@@ -107,7 +105,7 @@ import java.util.Scanner;
             //문자열 연결 연산자로 문장을 만드는 경우
             // String 변수의 특성때문에 성능저하 발생
 
-        }
+
 
 
 

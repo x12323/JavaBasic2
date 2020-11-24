@@ -1,7 +1,9 @@
+/*
 package x12323;
 
 import java.util.Scanner;
 
+*/
 /**
 * 파일명 : Sungjukv2
  *  작성일 : 2020.11.17
@@ -13,7 +15,8 @@ import java.util.Scanner;
  * 단, 성적처리 결과 출력시 출력문을 하나만 사용
  *
 * 변수 : name, kor, eng, mat, sum, mean, grd
-            */
+            *//*
+
 
     public class SungJukV3b {
         public static void main(String[] args){
@@ -26,24 +29,14 @@ import java.util.Scanner;
            double mean;
            char grd;
 
-            String fmt =  "이름 : %s\n" + "국어 : %d\n"
-                        + "영어 : %d\n" + "수학 : %d\n";
 
-            String result;
 
             Scanner sc = new Scanner(System.in);
 
             //처리
             for(int i=0; i<3; i++) {
                 System.out.printf("%d번째 학생 성적 입력중...\n",i+1);
-                System.out.print("이름을 입력하세요 : ");
-                name = sc.next();
-                System.out.print("국어를 입력하세요 : ");
-                kor = sc.nextInt();
-                System.out.print("영어를 입력하세요 : ");
-                eng = sc.nextInt();
-                System.out.print("수학을 입력하세요 : ");
-                mat = sc.nextInt();
+
                 sum = kor + eng + mat;
                 mean = (double)sum / 3;
                 switch( (int)mean / 10 ) {
@@ -83,14 +76,16 @@ import java.util.Scanner;
     }
             //
     // 결과출력
-            /*System.out.println("이름 : " + name);
+            */
+/*System.out.println("이름 : " + name);
             System.out.println("국어 : " + kor);
             System.out.println("영어 : " + eng);
             System.out.println("수학 : " + mat);
             System.out.println("---------------------");
             System.out.println("총점 : " + sum);
             System.out.println("평균 : " + mean);
-            System.out.println("학점 : " + grd);*/
+            System.out.println("학점 : " + grd);*//*
+
 
 
             //문자열 연결 연산자로 문장을 만드는 경우
@@ -99,5 +94,6 @@ import java.util.Scanner;
         }
 
 
+*/
 
 
