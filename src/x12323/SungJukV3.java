@@ -15,7 +15,7 @@ import java.util.Scanner;
 * 변수 : name, kor, eng, mat, sum, mean, grd
             */
 
-    public class SungJukV3 {
+    public class                       SungJukV3 {
         public static void main(String[] args){
             //배열변수선언
             //자료형 변수형[] = new 자료형[]

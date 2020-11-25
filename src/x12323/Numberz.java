@@ -6,7 +6,7 @@ package x12323;
 
 import java.util.Scanner;
 
-public class Numberz {
+public class    Numberz {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

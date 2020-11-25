@@ -1,3 +1,4 @@
+/*
 package x12323;
 
     public class Customer implements Buy, Sell{
@@ -12,3 +13,4 @@ package x12323;
         }
     }
 
+*/
