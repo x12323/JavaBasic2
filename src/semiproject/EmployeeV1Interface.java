@@ -1,10 +1,13 @@
 package semiproject;
 
+/**
+ * EmployeeV1Interface
+ * 인사정보 처리 인터페이스
+ */
 public interface EmployeeV1Interface {
-    void newHrInfo();
-    void readInfo();
-    void readOneInfo();
-    void modifyInfo();
-    void removeInfo();
-    void displayMenu();
+    void newEmployee();
+    void readEmployee();
+    void readOneEmployee();
+    void modifyEmployee();
+    void removeEmployee();
 }
